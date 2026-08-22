@@ -48,13 +48,26 @@ It's in Claude Code's official marketplace, so there's nothing to add first, and
 <details>
 <summary><strong>Codex, and other agents</strong></summary>
 
+Install the KSA MAT plugin for a managed, globally reusable copy:
+
+```bash
+codex plugin marketplace add fengurt/ksa-mat-skills
+codex plugin add ksa-mat-skills@ksa-mat
+```
+
+Start a new Codex task after installation.
+
+For editable project-local copies, [skills.sh](https://skills.sh/mattpocock/skills) remains available:
+
 ```bash
 npx skills@latest add mattpocock/skills
 ```
 
 Pick the skills you want, and which coding agents to install them on. **The installer lets you choose which skills to take, so make sure `setup-matt-pocock-skills` is one of them.**
 
-A native Codex plugin is on the roadmap (see [`.agents/adr/0002-ship-as-a-claude-code-plugin.md`](./.agents/adr/0002-ship-as-a-claude-code-plugin.md)).
+Pick one route: installing both gives Codex duplicate copies of the same skills.
+
+The plugin package decision is recorded in [`.agents/adr/0003-ship-a-native-codex-plugin.md`](./.agents/adr/0003-ship-a-native-codex-plugin.md).
 
 </details>
 
@@ -204,6 +217,8 @@ Skills I use daily for code work.
 **Model-invoked**
 
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
+- **[contrast-audit](./skills/engineering/contrast-audit/SKILL.md)**: Audit contrast across a project with computed WCAG checks for HTML and rendered visual review for PDF, PPTX, and images.
+- **[tencent-sms](./skills/engineering/tencent-sms/SKILL.md)**: Operate and diagnose Tencent Cloud SMS with runtime-only secrets, explicit send authorization, and redacted reporting.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
 - **[research](./skills/engineering/research/SKILL.md)**: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file in the repo, run as a background agent.
 - **[tdd](./skills/engineering/tdd/SKILL.md)**: Test-driven development with a red-green-refactor loop. Builds features or fixes bugs one vertical slice at a time.

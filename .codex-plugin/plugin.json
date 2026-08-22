@@ -1,0 +1,65 @@
+{
+  "name": "ksa-mat-skills",
+  "version": "1.2.3",
+  "description": "KSA MAT's curated distribution of Matt Pocock's engineering skills.",
+  "author": {
+    "name": "Fengurt",
+    "url": "https://github.com/fengurt"
+  },
+  "homepage": "https://github.com/fengurt/ksa-mat-skills",
+  "repository": "https://github.com/fengurt/ksa-mat-skills",
+  "license": "MIT",
+  "keywords": [
+    "engineering",
+    "skills",
+    "tdd",
+    "code-review",
+    "productivity"
+  ],
+  "skills": [
+    "./skills/engineering/ask-matt",
+    "./skills/engineering/code-review",
+    "./skills/engineering/codebase-design",
+    "./skills/engineering/contrast-audit",
+    "./skills/engineering/tencent-sms",
+    "./skills/engineering/diagnosing-bugs",
+    "./skills/engineering/domain-modeling",
+    "./skills/engineering/grill-with-docs",
+    "./skills/engineering/implement",
+    "./skills/engineering/improve-codebase-architecture",
+    "./skills/engineering/prototype",
+    "./skills/engineering/research",
+    "./skills/engineering/resolving-merge-conflicts",
+    "./skills/engineering/setup-matt-pocock-skills",
+    "./skills/engineering/tdd",
+    "./skills/engineering/to-spec",
+    "./skills/engineering/to-tickets",
+    "./skills/engineering/triage",
+    "./skills/engineering/wayfinder",
+    "./skills/engineering/wizard",
+    "./skills/productivity/grill-me",
+    "./skills/productivity/grilling",
+    "./skills/productivity/handoff",
+    "./skills/productivity/teach",
+    "./skills/productivity/to-questionnaire",
+    "./skills/productivity/wait-what",
+    "./skills/productivity/writing-for-agents"
+  ],
+  "interface": {
+    "displayName": "KSA MAT Skills",
+    "shortDescription": "Practical engineering workflows",
+    "longDescription": "A KSA MAT distribution of Matt Pocock's composable engineering and productivity skills, with the original MIT attribution preserved.",
+    "developerName": "Fengurt",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/fengurt/ksa-mat-skills",
+    "defaultPrompt": [
+      "Help me choose the right engineering workflow.",
+      "Diagnose this bug with a tight feedback loop.",
+      "Review this change against its spec and standards."
+    ]
+  }
+}
