@@ -22,9 +22,24 @@ It's in Claude Code's official marketplace, so there's nothing to add first, and
 
 </canonical-block>
 
-## Codex, and other agents — skills.sh
+## Codex — the KSA MAT plugin
 
-The plugin is Claude Code only. Everywhere else, [skills.sh](https://skills.sh/mattpocock/skills) copies editable skill files into the project. Use the whole-set form on `README.md`:
+The KSA MAT fork ships the promoted skill set as a managed Codex plugin:
+
+<canonical-block name="codex">
+
+```bash
+codex plugin marketplace add fengurt/ksa-mat-skills
+codex plugin add ksa-mat-skills@ksa-mat
+```
+
+Start a new Codex task after installation.
+
+</canonical-block>
+
+## Codex and other agents — skills.sh
+
+For editable project-local copies, [skills.sh](https://skills.sh/mattpocock/skills) remains available. Use the whole-set form on `README.md`:
 
 <canonical-block name="skills-sh-whole-set">
 
@@ -52,9 +67,9 @@ npx skills@latest update <name>
 
 `skills@latest` is the pinned spelling in all three. The pages under `docs/` used to carry their own copy of these commands; those blocks are now deleted rather than corrected, because the site renders the install commands itself.
 
-## The two routes are exclusive
+## The routes are exclusive
 
-The plugin is a managed, read-only bundle you subscribe to. skills.sh writes files you own and edit. Installing both leaves the user with every skill twice — always say "pick one".
+A plugin is a managed, read-only bundle you subscribe to. skills.sh writes files you own and edit. Installing both leaves the user with every skill twice — always say "pick one".
 
 ## Not the install story
 

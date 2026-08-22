@@ -1,0 +1,17 @@
+{
+  "name": "ksa-mat",
+  "interface": {
+    "displayName": "KSA MAT"
+  },
+  "plugins": [
+    {
+      "name": "ksa-mat-skills",
+      "source": "./",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

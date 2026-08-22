@@ -31,6 +31,8 @@
     "./skills/engineering/wayfinder",
     "./skills/engineering/implement",
     "./skills/engineering/prototype",
+    "./skills/engineering/contrast-audit",
+    "./skills/engineering/tencent-sms",
     "./skills/engineering/research",
     "./skills/engineering/domain-modeling",
     "./skills/engineering/codebase-design",
