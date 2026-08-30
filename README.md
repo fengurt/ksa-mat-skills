@@ -218,6 +218,7 @@ Skills I use daily for code work.
 
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
 - **[contrast-audit](./skills/engineering/contrast-audit/SKILL.md)**: Audit contrast across a project with computed WCAG checks for HTML and rendered visual review for PDF, PPTX, and images.
+- **[ksamint-githubaction-skill](./skills/engineering/ksamint-githubaction-skill/SKILL.md)**: Audit and reduce GitHub Actions billable fan-out, duplicate triggers, stale runs, and workflows that cannot succeed while preserving required checks.
 - **[tencent-sms](./skills/engineering/tencent-sms/SKILL.md)**: Operate and diagnose Tencent Cloud SMS with runtime-only secrets, explicit send authorization, and redacted reporting.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
 - **[research](./skills/engineering/research/SKILL.md)**: Investigate a question against high-trust primary sources and capture the findings as a cited Markdown file in the repo, run as a background agent.
@@ -242,5 +243,6 @@ General workflow tools, not code-specific.
 
 **Model-invoked**
 
+- **[build-unified-data-package](./skills/productivity/build-unified-data-package/SKILL.md)**: Convert raw and mixed datasets into reproducible packages with Parquet truth tables, CSV views, schemas, manifests, lineage, hashes, and release-gating validation.
 - **[grilling](./skills/productivity/grilling/SKILL.md)**: Interview the user relentlessly about a plan, decision, or idea until every branch of the design tree is resolved. The reusable interview primitive behind `grill-me`, `grill-with-docs`, `triage`, `wayfinder` and `improve-codebase-architecture`.
 - **[writing-for-agents](./skills/productivity/writing-for-agents/SKILL.md)**: Writing documents for agents: skills, AGENTS.md/CLAUDE.md, and any doc an agent reaches by a pointer.
