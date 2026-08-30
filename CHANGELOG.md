@@ -1,5 +1,11 @@
 # mattpocock-skills
 
+## 1.4.0
+
+### Minor Changes
+
+- c0536ac: Add `ksamint-githubaction-skill` for reducing redundant GitHub Actions usage and `build-unified-data-package` for producing validated, reproducible data handoffs.
+
 ## 1.3.0
 
 ### Minor Changes
