@@ -32,6 +32,7 @@
     "./skills/engineering/implement",
     "./skills/engineering/prototype",
     "./skills/engineering/contrast-audit",
+    "./skills/engineering/github-fast-deploy",
     "./skills/engineering/ksamint-githubaction-skill",
     "./skills/engineering/tencent-sms",
     "./skills/engineering/research",

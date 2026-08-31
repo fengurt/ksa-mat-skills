@@ -21,6 +21,7 @@
     "./skills/engineering/code-review",
     "./skills/engineering/codebase-design",
     "./skills/engineering/contrast-audit",
+    "./skills/engineering/github-fast-deploy",
     "./skills/engineering/ksamint-githubaction-skill",
     "./skills/engineering/tencent-sms",
     "./skills/engineering/diagnosing-bugs",

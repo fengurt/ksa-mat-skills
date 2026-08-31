@@ -218,6 +218,7 @@ Skills I use daily for code work.
 
 - **[prototype](./skills/engineering/prototype/SKILL.md)**: Build a throwaway prototype to answer a design question, either a single shareable HTML file for state/logic questions, or several radically different UI variations toggleable from one route.
 - **[contrast-audit](./skills/engineering/contrast-audit/SKILL.md)**: Audit contrast across a project with computed WCAG checks for HTML and rendered visual review for PDF, PPTX, and images.
+- **[github-fast-deploy](./skills/engineering/github-fast-deploy/SKILL.md)**: Route an authorized release between GitHub Actions and an existing local or provider-CLI fallback without racing two production mutations.
 - **[ksamint-githubaction-skill](./skills/engineering/ksamint-githubaction-skill/SKILL.md)**: Audit and reduce GitHub Actions billable fan-out, duplicate triggers, stale runs, and workflows that cannot succeed while preserving required checks.
 - **[tencent-sms](./skills/engineering/tencent-sms/SKILL.md)**: Operate and diagnose Tencent Cloud SMS with runtime-only secrets, explicit send authorization, and redacted reporting.
 - **[diagnosing-bugs](./skills/engineering/diagnosing-bugs/SKILL.md)**: Disciplined diagnosis loop for hard bugs and performance regressions: build a feedback loop that goes red on this bug → minimise → hypothesise → instrument → fix → regression-test.
