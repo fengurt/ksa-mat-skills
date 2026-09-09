@@ -2,13 +2,13 @@
 
 `ksamint-githubaction-skill` audits how GitHub Actions is triggered and where runner time is actually spent, then removes duplicate, stale, or impossible work without weakening release gates.
 
-It optimizes **billable fan-out**, not just the short wall-clock duration shown on a workflow page. Every job can allocate its own runner, repeat setup, and be billed independently, so a fast-looking workflow can still be expensive.
+It follows your objective: shorter elapsed time, lower runner cost, or more reliable checks. A slow test step gets a focused review of that workflow and its runner capacity. A repository-wide cost audit examines the broader execution graph and billable fan-out.
 
 ## When to reach for it
 
 Type `/ksamint-githubaction-skill`, or the [agent](https://www.aihero.dev/ai-coding-dictionary/agent) reaches for it automatically when a task fits.
 
-Reach for it when Actions minutes rise unexpectedly, one commit starts several similar workflows, scheduled jobs add little signal, deploy workflows fail repeatedly, or you need to choose between hosted Actions, a self-hosted runner, local deployment, and provider-native deployment.
+Reach for it when a test or release path is too slow, Actions minutes rise unexpectedly, one commit starts several similar workflows, scheduled jobs add little signal, deploy workflows fail repeatedly, or you need to choose between hosted Actions, a self-hosted runner, local deployment, and provider-native deployment.
 
 ## Prerequisites
 
@@ -27,11 +27,18 @@ It also checks topology before recommending infrastructure. A GitHub-hosted runn
 
 ## Remove work before making it faster
 
-The highest-value change is usually stopping work that cannot succeed. Broken automatic deploys become manual until their prerequisites exist. Duplicate event paths are collapsed, superseded verification is cancelled safely, and only then are jobs, matrices, caches, schedules, and runner placement optimized.
+For a full waste audit, the highest-value change is usually stopping work that cannot succeed. Broken automatic deploys become manual until their prerequisites exist. Duplicate event paths are collapsed, superseded verification is cancelled safely, and only then are jobs, matrices, caches, schedules, and runner placement optimized.
+
+For a focused latency fix, it addresses the measured bottleneck directly. For example, test workers can share an existing job when the runner has capacity and tests are isolated. An unrelated billing or runner migration audit is not required.
+
+Completed checks are reused when their code, dependencies, configuration, and test inputs are unchanged. Required CI for the exact release commit still runs when repository policy requires it.
 
 Required check names and release evidence remain stable. A cheaper workflow that bypasses the gate is not an optimization.
 
 ## Common questions
+
+**Does a slow test step require a full billing audit?**
+No. The skill uses evidence from the affected workflow to choose and verify the smallest fix. Billing estimates and a full workflow inventory are needed only when they answer your requested objective or affect the decision.
 
 **Why does a two-minute workflow consume more than two minutes?**
 The page shows elapsed workflow time, while several jobs may run on separate runners and repeat checkout, runtime setup, dependency installation, and cleanup. Billing rules can also round each job independently.
@@ -51,7 +58,8 @@ Usually not. Pull-request code should not share a host with production credentia
 - Replaced commits stop consuming verification runners while production deploys remain interruption-safe.
 - Repeated no-runner failures and impossible deploys no longer consume the workflow queue.
 - Required checks keep their names and still pass before release.
-- The report separates observed duration, estimated billing, and account-level blockers.
+- A focused fix reports its baseline, relevant result, and preserved gates without repeating unchanged checks.
+- A full cost audit separates observed duration, estimated billing, and account-level blockers.
 
 ## Where it fits
 
