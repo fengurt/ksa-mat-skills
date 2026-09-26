@@ -1,5 +1,11 @@
 # mattpocock-skills
 
+## 1.5.0
+
+### Minor Changes
+
+- d687d22: Add `github-fast-deploy`, which routes an authorized release between GitHub Actions and an existing local or provider-CLI fallback without racing production mutations.
+
 ## 1.4.0
 
 ### Minor Changes
